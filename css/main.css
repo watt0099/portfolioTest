@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap');
+
 html{
   height: 100%;
+  scroll-behavior: smooth
+  
+}
 
-}body {
+body {
   padding: 0;
   margin: 0;
-  background: #141414;
   min-height: 100%;
+  background: #141414;
 }
 
 * {
@@ -35,11 +40,18 @@ h1, h2, h3, h4, h5{
   color: #CF9625;
 }
 
+h1{
+  text-align: center;
+}
+
 p{
   font-family: 'Raleway', sans-serif;
   color: #fff;
 }
 
+hr{
+  color: #CF9625;
+}
 
 /* new clearfix */
 .clearfix:after {
@@ -52,16 +64,23 @@ p{
 }
 
 
+
 /*~~~~~~~~~ Navigation ~~~~~~~~~*/
 header{
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   left: 0;
   width: 100%; /* Full width */
-  background-color: darkgrey;
+  background-color: rgba(20, 20, 20, .9);
   z-index: 99;
+  box-shadow: 0px 3px 10px 10px rgba(0,0,0,.5);
 }
 
+.tinypic{
+  border-radius: 100%;
+  width: 2rem;
+  margin:0 1rem;
+}
 
 nav ul{
   margin: 0 auto;
@@ -75,14 +94,28 @@ nav ul{
   margin-top: 6rem;
 }
 
+/*~~~~~~~~~ INTRO ~~~~~~~~~*/
+
+.intro{
+  text-align: center;
+  color: red;
+}
+
 /*~~~~~~~~~ ABOUT ~~~~~~~~~*/
 
+.about img{
+  margin-bottom: 1rem; 
+}
 
 /*~~~~~~~~~ PORTFOLIO ~~~~~~~~~*/
+.portfolioIntro{
+  text-align: center;
+}
+
 /*Hex Grid [Tutorial avaliable at https://www.codesmite.com/article/how-to-create-pure-css-hexagonal-grids]*/
 #grid {
     position: relative;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     padding: 0; /* Clears unordered list default of 40px */
 }
@@ -145,4 +178,31 @@ nav ul{
     margin-left: 0.5%;
 }
 
+#grid img{
+  background-position: center;
+}
+
 /*~~~~~~~~~ CONTACT ~~~~~~~~~*/
+
+/*~~~~~~~~~ FOOTER ~~~~~~~~~*/
+footer{
+  text-align: center;
+}
+
+
+/*TABLET*/
+@media only screen and (min-width: 600px){
+
+#grid {
+    width: 80%;
+}
+
+}
+
+
+/*DESKTOP*/
+@media only screen and (min-width: 768px) {
+  #grid {
+    width: 60%;
+}
+}
