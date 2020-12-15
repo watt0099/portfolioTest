@@ -17,6 +17,14 @@
 	<!-- FAVICON -->
 	<link rel="icon" href="favicon.png" />
 
+  <!------------ jQuery and Bootstrap JavaScript ------------> 
+<script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Page Specific Scripts -->
+<script defer src="scripts/scripts.js"></script>
+
 </head>
 
 
@@ -290,10 +298,8 @@
 </div>
 
 <!--~~~~~~~~~~~~~~~~~END MODALS~~~~~~~~~~~~~~~~~~-->
-<body>
-<div id='stars'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
+<body id="body">
+
 	<div class="container">
    <!-- HEADER/NAV -->
    <header>
@@ -324,7 +330,7 @@
 <!-- END HEADER -->
 
 <!-- MAIN CONTENT -->
-<div class="main" id="main">
+<div class="main slide-in-top" id="main">
   <br>
   <br>
   <br>
@@ -332,9 +338,9 @@
   <br>
   <br>
   <!-- Home Section-->
-  <div class="intro">
+  <div class="intro tracking-in-expand">
 
-    <h1>I am Alex Watt.</h1>
+    <h1>I am Alex Watt</h1>
     <p>A designer based in Ottawa, Canada.</p>
     <p>I do a bit of everything.</p>
     <p>Whatever you need, I'll do it well.</p>
@@ -407,7 +413,7 @@
  </li>
  <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#cafe" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#cafe" data-keyboard="false">
     <img src="./images/gallery/web/cafeThumb.jpg" data-toggle="modal" data-target="#cafe" alt=""/>
     <h1>PLACEHOLDER</h1>
   </a>
@@ -415,7 +421,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#ngo" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#ngo" data-keyboard="false">
     <img src="./images/gallery/web/ngoThumb.jpg" data-toggle=
     "modal" alt="NGO"/>
     <h1>PLACEHOLDER</h1>
@@ -424,7 +430,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#roomfinder" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#roomfinder" data-keyboard="false">
     <img src="./images/gallery/web/roomfinderThumb.jpg" data-toggle=
     "modal" alt="Project Roomfinder"/>
     <h1>PLACEHOLDER</h1>
@@ -433,7 +439,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#siberians" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#siberians" data-keyboard="false">
     <img src="./images/gallery/web/siberiansThumb.jpg" data-toggle=
     "modal" alt="Siberians of the Heartland"/>
     <h1>PLACEHOLDER</h1>
@@ -449,7 +455,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#typographic" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#typographic" data-keyboard="false">
     <img src="./images/gallery/design/typographicPosterThumb.jpg" data-toggle=
     "modal" alt="Typographic Poster"/>
     <h1>PLACEHOLDER</h1>
@@ -458,7 +464,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#logo" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#logo" data-keyboard="false">
     <img src="./images/gallery/design/logoprocessThumb.jpg" data-toggle=
     "modal" alt="Logo Design process"/>
     <h1>PLACEHOLDER</h1>
@@ -467,7 +473,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#magazine" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#magazine" data-keyboard="false">
     <img src="./images/gallery/design/magazineThumb.jpg" data-toggle=
     "modal" alt="Magazine"/>
     <h1>PLACEHOLDER</h1>
@@ -476,7 +482,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#infographic" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#infographic" data-keyboard="false">
     <img src="./images/gallery/design/infographicThumb.jpg" data-toggle=
     "modal" alt="Infographic"/>
     <h1>PLACEHOLDER</h1>
@@ -492,7 +498,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#demo" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#demo" data-keyboard="false">
     <img src="./images/gallery/video/demoThumbnail.jpg" data-toggle=
     "modal" alt="Demo Reel 2020"/>
     <h1>PLACEHOLDER</h1>
@@ -501,7 +507,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#fall" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#fall" data-keyboard="false">
     <img src="./images/gallery/video/fallThumbnail.jpg" data-toggle=
     "modal" alt="An Autumn Minute"/>
     <h1>PLACEHOLDER</h1>
@@ -510,7 +516,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#truffles" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#truffles" data-keyboard="false">
     <img src="./images/gallery/video/gingerbreadThumbnail.jpg" data-toggle=
     "modal" alt="Gingerbread Chocolate Truffles"/>
     <h1>PLACEHOLDER</h1>
@@ -519,7 +525,7 @@
 </li>
 <li>
   <div class="hexagon">
-   <a href="#" data-toggle="modal" data-target="#grade" data-backdrop="static" data-keyboard="false">
+   <a href="#" data-toggle="modal" data-target="#grade" data-keyboard="false">
     <img src="./images/gallery/video/gradeThumbnail.jpg" data-toggle=
     "modal" alt="The Grade"/>
     <h1>PLACEHOLDER</h1>
@@ -567,8 +573,12 @@
 <!-- END MAIN -->
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
 <!-- FOOTER -->
-<footer class="container">
+<footer>
   <p>
    ©2020 Designed by Alexandra Watt &nbsp; &nbsp;| &nbsp; &nbsp; 
    <a href="https://www.instagram.com/alexandrawattart/" target="_blank"><i class="fab fa-instagram-square"></i></a>
@@ -578,33 +588,33 @@
 <!-- END FOOTER -->
 </div>
 
+<!--  Super Cool Page Animation | Code courtesy of https://www.vantajs.com/ |-->
+<script src="scripts/three.r119.min.js"></script>
+<script src="scripts/vanta.waves.min.js"></script>
 
-<!------------ jQuery and Bootstrap JavaScript ------------> 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-<!--Script stops video from playing when modal is closed-->
 <script>
-  $("#demo").on('hidden.bs.modal', function (e) {
-    $("#demo iframe").attr("src", $("#demo iframe").attr("src"));
-  });
+  VANTA.WAVES({
+    el: "#body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x70605,
+    shininess: 18.00,
+    waveHeight: 13.00,
+    waveSpeed: 0.45,
+    zoom: 0.65
+  })
 
-  $("#fall").on('hidden.bs.modal', function (e) {
-    $("#fall iframe").attr("src", $("#fall iframe").attr("src"));
-  });
 
-  $("#grade").on('hidden.bs.modal', function (e) {
-    $("#grade iframe").attr("src", $("#grade iframe").attr("src"));
-  });
-
-  $("#truffles").on('hidden.bs.modal', function (e) {
-    $("#truffles iframe").attr("src", $("#truffles iframe").attr("src"));
-  });
-
-
-</script> 
+  _strk.push(function() {
+    setVanta()
+    window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
+  })
+</script>
 
 </body>
 
